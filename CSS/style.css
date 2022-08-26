@@ -1,0 +1,261 @@
+/** Back Box */
+
+#blackBox 
+{ 
+	width:100%; 
+	height:700px; 
+    padding: 0px;
+	background-color: black;
+    position: absolute;
+    z-index: -1; 
+}
+
+/** General Text Stuff*/
+p{
+    text-align: center;
+    padding: 2%;
+}
+h1{
+    font-size: 120px;
+}
+h2{
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+h5{
+    text-align: center;
+}
+/** Nav */
+#intro{
+    position: relative;
+    right: 15%;
+}
+#ux{
+    position: relative;
+    left: 15%
+}
+.inline-block {
+    display: inline;
+    vertical-align: top;
+    margin-left: auto;
+    margin:10px;
+    padding:0;
+    list-style:none;
+    /* width:525px; */
+}
+.logo {
+    width: 5%;
+    padding: 1%;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+#fullName {
+    position: absolute;
+    top: 36px;
+    right: 36px;
+    font-size: 18px;
+    color: #B0B0B0;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+    color: #B0B0B0;
+}
+.navUl{
+    position: absolute;
+    top: 36px;
+    left: 120px;
+    font-size: 18px;
+    color: #B0B0B0;
+}
+
+/** Hero Header */
+
+.heroImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+    width: 540px;
+    height: auto;
+}
+.content{
+    width: 1300px;
+    margin: 0 auto;
+}
+#intro{
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+#ux{
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+#draw{
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+/** My Work */
+
+#work{
+    justify-content: center;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "abilis abilis reminders reminders";
+    grid-gap: 0.2rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2vh;
+}
+.abilis{
+    grid-area: abilis;
+}
+.reminders{
+    grid-area: reminders;
+}
+#aWords{
+    margin-right: 8vw;
+    margin-left: 5vw;
+}
+#rWords{
+    margin-right: 11vw;
+    margin-left: 3vw;
+}
+#abilisImg{
+    height: 50vh;
+    width: auto;
+    padding-left: 5vw;
+}
+#remindersImg{
+    height: 50vh;
+    width: auto;
+    padding-left: 3vw;
+}
+
+/** Why Me */
+.flexContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #E8EEFC;
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-bottom: 3%;
+}
+.whyMe{
+    background-color: #E8EEFC;
+}
+.whyMe > h1{
+    background-color: white;
+    padding-bottom: 2vh;
+    justify-content: center;
+}
+.personableResearcher{
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+}
+.empathy{
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+}
+.aesthetics{
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+}
+.imageDiv{
+    justify-content: center;
+}
+#prImg{
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#eImg{
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#aImg{
+    width: 70px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom{
+    background-color: white;
+    justify-content: center;
+}
+.bottom p{
+    padding-top: 20px;
+    text-align: center;
+}
+button{
+    /*justify-content: center;*/
+    border-radius: 2px;
+    background-color: black
+    /*color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;*/
+}
+
+/** Footer */
+
+footer {
+  vertical-align: bottom;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FBFBFB;
+  color: black;
+  text-align: center;
+}
+
+/** Media Query*/
+@media only screen and (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+    .personableResearcher{
+        width: 100%;
+    }
+    .empathy{
+        width: 100%;
+    }
+    .aesthetics{
+        width: 100%;
+    }
+    .workGrid{
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "abilis"
+        "reminders";
+    }
+  }
