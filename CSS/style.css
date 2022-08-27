@@ -1,3 +1,8 @@
+/* Java */
+html {
+    scroll-behavior: smooth;
+  }
+
 /** Back Box */
 
 #blackBox 
@@ -43,6 +48,10 @@ h5{
     padding:0;
     list-style:none;
     /* width:525px; */
+}
+a{
+    color: #B0B0B0;
+    text-decoration: none;
 }
 .logo {
     width: 5%;
@@ -207,21 +216,24 @@ nav {
 .bottom{
     background-color: white;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .bottom p{
     padding-top: 20px;
     text-align: center;
 }
 button{
-    /*justify-content: center;*/
-    border-radius: 2px;
-    background-color: black
-    /*color: white;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;*/
+    font-size: 16px;
 }
 
 /** Footer */
@@ -239,6 +251,8 @@ footer {
 
 /** Media Query*/
 @media only screen and (max-width: 600px) {
+    /*Why Me*/
+    
     body {
       flex-direction: column;
     }
@@ -258,4 +272,45 @@ footer {
         "abilis"
         "reminders";
     }
+    /** My Work */
+
+    #work{
+        justify-content: center;
+    }
+    .workGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "abilis" "reminders";
+        grid-gap: 0.2rem;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 2vh;
+    }
+    .abilis{
+        grid-area: abilis;
+    }
+    .reminders{
+        grid-area: reminders;
+    }
+    #aWords{
+        margin-right: 8vw;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+    }
+    #rWords{
+        margin-right: 11vw;
+        margin-left: 3vw;
+    }
+    #abilisImg{
+        height: 50vh;
+        width: auto;
+        padding-left: 5vw;
+    }
+    #remindersImg{
+        height: 50vh;
+        width: auto;
+        padding-left: 3vw;
+    }
+
   }
