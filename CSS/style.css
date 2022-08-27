@@ -21,7 +21,7 @@ p{
     padding: 2%;
 }
 h1{
-    font-size: 120px;
+    font-size: 64px;
 }
 h2{
     text-align: center;
@@ -101,7 +101,6 @@ nav {
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 18px;
 }
 #ux{
     color: white;
@@ -109,7 +108,6 @@ nav {
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 18px;
 }
 #draw{
     color: white;
