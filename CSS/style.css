@@ -21,12 +21,13 @@ p{
     padding: 2%;
 }
 h1{
-    font-size: 50px;
+    font-size: 64px;
 }
 h2{
     text-align: center;
     padding-top: 5vh;
     padding-bottom: 3vh;
+    font-size: 48px;
 }
 h5{
     text-align: center;
@@ -34,11 +35,11 @@ h5{
 /** Nav */
 #intro{
     position: relative;
-    right: 15%;
+    right: 20%;
 }
 #ux{
     position: relative;
-    left: 15%
+    left: 20%
 }
 .inline-block {
     display: inline;
@@ -140,16 +141,16 @@ nav {
 }
 #aWords{
     margin-right: 8vw;
-    margin-left: 5vw;
+    margin-left: 11vw;
 }
 #rWords{
-    margin-right: 11vw;
+    margin-right: 13vw;
     margin-left: 3vw;
 }
 #abilisImg{
     height: 50vh;
     width: auto;
-    padding-left: 5vw;
+    padding-left: 11vw;
 }
 #remindersImg{
     height: 50vh;
@@ -219,7 +220,8 @@ nav {
     align-items: center;
 }
 .bottom p{
-    padding-top: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     text-align: center;
 }
 button{
@@ -245,6 +247,7 @@ footer {
   background-color: #FBFBFB;
   color: black;
   text-align: center;
+  margin-top: 5vh;
 }
 
 /** Media Query*/
